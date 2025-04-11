@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <button class="logout-btn">Logout</button>
+            <div class="logo">
+                <!-- <img src="images/back.jp" alt="Lgo"> -->
+                <span>GET RICH</span>
+            </div>
+            <div class="language">
+                <!-- <img src="images/eng.j" alt="EN Flag" -->
+                <span>EN</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="user-info-section">
+            <div class="user-card">
+                <div class="free-tag">FREE</div>
+                <div class="user-id">ID: 53534</div>
+                <div class="days-info">0 days</div>
+                <div class="time-info">UTC 14:02:49</div>
+            </div>
+
+            <div class="user-actions">
+                <div class="action-btn">
+                    <i class="fas fa-crown"></i>
+                    <span>Upgrade</span>
+                </div>
+                <div class="action-btn">
+                    <i class="fas fa-gift"></i>
+                    <span>Invite</span>
+                </div>
+                <div class="action-btn">
+                    <i class="fas fa-coins"></i>
+                    <span>WST Token</span>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <button class="telegram-btn">
+                    <i class="fab fa-telegram"></i>
+                    Telegram
+                </button>
+                <button class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i>
+                    WhatsApp
+                </button>
+            </div>
+
+            <div class="referral-banner">
+                <i class="fas fa-fire"></i>
+                <span>EARN $1 TODAY! - Referral Challenge</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+
+        <div class="balance-section">
+            <h2>Available Balance</h2>
+            <div class="balance-amount">
+                <span class="currency">$</span>
+                <span class="amount">4.10</span>
+            </div>
+            <div class="exact-balance">$4.1036</div>
+            
+            <div class="chart-container">
+                <canvas id="balanceChart"></canvas>
+            </div>
+            
+            <div class="balance-actions">
+                <div class="action-btn">
+                    <i class="fas fa-wallet"></i>
+                    <span>Pay Out</span>
+                </div>
+                <div class="action-btn">
+                    <i class="fas fa-coins"></i>
+                    <span>Top Up</span>
+                </div>
+                <div class="action-btn">
+                    <i class="fas fa-history"></i>
+                    <span>History</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="stats-section">
+            <div class="stat-card">
+                <div class="stat-title">Today</div>
+                <div class="stat-value">$0.00</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-title">Last 7 Days</div>
+                <div class="stat-value">$0.00</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-title">This Month</div>
+                <div class="stat-value">$0.00</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-title">Today Commission</div>
+                <div class="stat-value">$0.00</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-title">Total Commission</div>
+                <div class="stat-value">$0.00</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-title">Total Earnings</div>
+                <div class="stat-value">$3.00</div>
+            </div>
+        </div>
+
+        <div class="telegram-join">
+            <div class="telegram-content">
+                <h2>Join Telegram</h2>
+                <p>Telegram group for updates and support</p>
+            </div>
+            <div class="telegram-icon">
+                <i class="fab fa-telegram"></i>
+            </div>
+        </div>
+
+        <div class="transactions-section">
+            <div class="section-header">
+                <h3>Recent Transactions</h3>
+                <button class="view-all-btn">View All <i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="transactions-list">
+                <!-- Transaction items will be added here -->
+            </div>
+        </div>
+    </main>
+
+    <nav class="bottom-nav">
+      <!-- Home -->
+      <a href="home.html" class="nav-item active">
+          <i class="fas fa-home"></i>
+          <span>Home</span>
+      </a>
+  
+      <!-- Personal -->
+      <a href="personal.html" class="nav-item">
+          <i class="fas fa-user"></i>
+          <span>Personal</span>
+      </a>
+  
+      <!-- Teams -->
+      <a href="team-index.html" class="nav-item">
+          <i class="fas fa-users"></i>
+          <span>Teams</span>
+      </a>
+  
+      <!-- Level -->
+      <a href="level.html" class="nav-item">
+          <i class="fas fa-crown"></i>
+          <span>Level</span>
+      </a>
+  
+      <!-- Settings -->
+      <a href="settings.html" class="nav-item">
+          <i class="fas fa-cog"></i>
+          <span>Settings</span>
+      </a>
+  </nav>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chart.js/3.9.1/chart.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team - GET RICH Network</title>
+    <link rel="stylesheet" href="team-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <button class="logout-btn">Logout</button>
+            <div class="logo">
+                <!-- <img src="/api/placeholder/40/40" alt="Logo"> -->
+                <span>GET RICH</span>
+            </div>
+            <div class="language">
+                <!-- <img src="/api/placeholder/20/15" alt="EN Flag"> -->
+                <span>EN</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-title">
+            <h1>My Team</h1>
+        </div>
+
+        <div class="team-card">
+            <h2>My Superior</h2>
+            <div class="superior-info">
+                <p>ID: <span class="superior-id">53273</span></p>
+                <button class="contact-btn">
+                    <i class="fas fa-comment-dots"></i>
+                    Contact my Team Leader
+                </button>
+                <p class="contact-tip">Please write in the group: "I'm looking for my Team Leader with ID: 53273"</p>
+            </div>
+        </div>
+
+        <div class="stats-tabs">
+            <button class="tab-btn active" data-tab="total">Total</button>
+            <button class="tab-btn" data-tab="today">Today</button>
+            <button class="tab-btn" data-tab="last7">Last 7 Days</button>
+        </div>
+
+        <div class="team-card">
+            <h2>Team Size</h2>
+            <div class="team-lines">
+                <div class="line-item">
+                    <div class="line-label">Line 1</div>
+                    <div class="line-value">1</div>
+                </div>
+                <div class="line-item">
+                    <div class="line-label">Line 2</div>
+                    <div class="line-value">0</div>
+                </div>
+                <div class="line-item">
+                    <div class="line-label">Line 3</div>
+                    <div class="line-value">0</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="team-card">
+            <h2>Invited Friends Commission</h2>
+            <div class="team-lines">
+                <div class="line-item">
+                    <div class="line-label">Line 1</div>
+                    <div class="line-value green">$0.00</div>
+                </div>
+                <div class="line-item">
+                    <div class="line-label">Line 2</div>
+                    <div class="line-value green">$0.00</div>
+                </div>
+                <div class="line-item">
+                    <div class="line-label">Line 3</div>
+                    <div class="line-value green">$0.00</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="team-card">
+            <h2>Team Task Commission</h2>
+            <div class="team-lines">
+                <div class="line-item">
+                    <div class="line-label">Line 1</div>
+                    <div class="line-value green">$0.26</div>
+                </div>
+                <div class="line-item">
+                    <div class="line-label">Line 2</div>
+                    <div class="line-value green">$0.05</div>
+                </div>
+                <div class="line-item">
+                    <div class="line-label">Line 3</div>
+                    <div class="line-value green">$0.00</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="team-card">
+            <h2>Team Log</h2>
+            <div class="search-bar">
+                <input type="text" placeholder="Search ID" class="search-input">
+                <button class="search-btn">Search</button>
+            </div>
+            <div class="team-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>User ID</th>
+                            <th>Line</th>
+                            <th>VIP Level</th>
+                            <th>Join Date</th>
+                            <th>Balance</th>
+                        </tr>
+                    </thead>
+                    <tbody id="teamLogTable">
+                        <!-- Team members will be populated here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <nav class="bottom-nav">
+      <!-- Home -->
+      <a href="home.html" class="nav-item active">
+          <i class="fas fa-home"></i>
+          <span>Home</span>
+      </a>
+  
+      <!-- Personal -->
+      <a href="personal.html" class="nav-item">
+          <i class="fas fa-user"></i>
+          <span>Personal</span>
+      </a>
+  
+      <!-- Teams -->
+      <a href="team-index.html" class="nav-item">
+          <i class="fas fa-users"></i>
+          <span>Teams</span>
+      </a>
+  
+      <!-- Level -->
+      <a href="level.html" class="nav-item">
+          <i class="fas fa-crown"></i>
+          <span>Level</span>
+      </a>
+  
+      <!-- Settings -->
+      <a href="settings.html" class="nav-item">
+          <i class="fas fa-cog"></i>
+          <span>Settings</span>
+      </a>
+  </nav>
+
+    <script src="team-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,268 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+   background-color: #f8f9fa;
+   color: #333;
+   line-height: 1.6;
+   padding-bottom: 70px;
+}
+
+/* Header Styles */
+header {
+   background-color: white;
+   padding: 10px 15px;
+   border-bottom: 1px solid #e0e0e0;
+   position: sticky;
+   top: 0;
+   z-index: 100;
+}
+
+.header-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.logo {
+   display: flex;
+   align-items: center;
+   font-size: 1.5rem;
+   color: #1a73e8;
+   font-weight: bold;
+}
+
+.logo img {
+   margin-right: 10px;
+}
+
+.logout-btn {
+   background-color: #1a73e8;
+   color: white;
+   border: none;
+   padding: 8px 15px;
+   border-radius: 4px;
+   cursor: pointer;
+   font-weight: bold;
+}
+
+.language {
+   display: flex;
+   align-items: center;
+   gap: 5px;
+   font-weight: bold;
+}
+
+/* Main Content */
+main {
+   max-width: 600px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+.page-title {
+   background: linear-gradient(to right, #1a73e8, #4285f4);
+   color: white;
+   padding: 20px;
+   text-align: center;
+   border-radius: 0 0 12px 12px;
+   margin-bottom: 20px;
+}
+
+.page-title h1 {
+   margin: 0;
+   font-size: 1.8rem;
+}
+
+/* Level Cards */
+.level-card {
+   background-color: white;
+   border-radius: 12px;
+   padding: 20px;
+   margin-bottom: 20px;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.level-header {
+   display: flex;
+   align-items: center;
+   margin-bottom: 15px;
+}
+
+.level-icon {
+   margin-right: 15px;
+}
+
+.level-badge {
+   width: 50px;
+   height: 50px;
+   background-color: #f1f3f4;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.5rem;
+   font-weight: bold;
+   color: #555;
+}
+
+.level-badge.level1 {
+   background-color: #4caf50;
+   color: white;
+}
+
+.level-badge.level2 {
+   background-color: #ff9800;
+   color: white;
+}
+
+.level-badge.level5 {
+   background-color: #9c27b0;
+   color: white;
+}
+
+.level-info {
+   flex: 1;
+}
+
+.level-info h2 {
+   font-size: 1.3rem;
+   margin-bottom: 5px;
+}
+
+.level-info p {
+   color: #666;
+   font-size: 0.9rem;
+}
+
+.level-status {
+   margin-left: auto;
+}
+
+.current-badge {
+   background-color: #ffeb3b;
+   color: #333;
+   padding: 5px 10px;
+   border-radius: 15px;
+   font-size: 0.8rem;
+   font-weight: bold;
+}
+
+/* Level Details */
+.level-details {
+   border-top: 1px solid #eee;
+   padding-top: 15px;
+}
+
+.detail-row {
+   display: flex;
+   margin-bottom: 15px;
+}
+
+.detail-column {
+   flex: 1;
+   padding: 0 10px;
+}
+
+.detail-label {
+   color: #666;
+   font-size: 0.9rem;
+   margin-bottom: 5px;
+}
+
+.detail-value {
+   font-weight: bold;
+   font-size: 1.1rem;
+}
+
+.withdrawal {
+   color: #1a73e8;
+}
+
+/* Upgrade Button */
+.upgrade-btn {
+   width: 100%;
+   background-color: #1a73e8;
+   color: white;
+   border: none;
+   padding: 12px;
+   border-radius: 5px;
+   font-size: 1rem;
+   font-weight: bold;
+   cursor: pointer;
+   transition: background-color 0.3s;
+}
+
+.upgrade-btn:hover {
+   background-color: #0d62c9;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background-color: white;
+   display: flex;
+   justify-content: space-around;
+   padding: 10px 0;
+   box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+   z-index: 100;
+}
+
+.nav-item {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 5px 15px;
+   cursor: pointer;
+   color: #777;
+   font-size: 0.8rem;
+   text-decoration: none;
+}
+
+.nav-item.active {
+   color: #4285f4;
+}
+
+.nav-item i {
+   font-size: 1.2rem;
+   margin-bottom: 3px;
+}
+
+/* Responsive Designs */
+@media (max-width: 500px) {
+   .detail-row {
+       flex-direction: column;
+   }
+   
+   .detail-column {
+       padding: 10px 0;
+       display: flex;
+       justify-content: space-between;
+   }
+   
+   .detail-label {
+       margin-bottom: 0;
+   }
+}
+
+
+.nav-item {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 10px;
+   text-decoration: none;
+   color: inherit;
+}
+.nav-item.active {
+   color: #4CAF50; /* Highlight color */
+}

@@ -1,0 +1,374 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+   background-color: #f8f9fa;
+   color: #333;
+   line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+   background-color: white;
+   padding: 10px 15px;
+   border-bottom: 1px solid #e0e0e0;
+   position: sticky;
+   top: 0;
+   z-index: 100;
+}
+
+.header-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.logo {
+   display: flex;
+   align-items: center;
+   font-size: 1.5rem;
+   color: #4a90e2;
+   font-weight: bold;
+}
+
+.logo img {
+   margin-right: 10px;
+}
+
+.logout-btn {
+   background-color: #1a73e8;
+   color: white;
+   border: none;
+   padding: 8px 15px;
+   border-radius: 4px;
+   cursor: pointer;
+   font-weight: bold;
+}
+
+.language {
+   display: flex;
+   align-items: center;
+   gap: 5px;
+   font-weight: bold;
+}
+
+/* Main Content */
+main {
+   max-width: 600px;
+   margin: 0 auto;
+   padding: 20px 15px;
+}
+
+/* User Info Section */
+.user-info-section {
+   background-color: white;
+   border-radius: 12px;
+   padding: 20px;
+   margin-bottom: 20px;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.user-card {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   padding-left: 60px;
+   margin-bottom: 20px;
+}
+
+.free-tag {
+   position: absolute;
+   left: 0;
+   top: 0;
+   background-color: #f0f0f0;
+   padding: 5px 10px;
+   border-radius: 5px;
+   font-size: 0.8rem;
+   font-weight: bold;
+}
+
+.user-id {
+   font-weight: bold;
+}
+
+.days-info {
+   color: #ff9800;
+   font-weight: bold;
+}
+
+.time-info {
+   color: #777;
+   font-size: 0.9rem;
+}
+
+.user-actions {
+   display: flex;
+   justify-content: space-around;
+   margin: 20px 0;
+}
+
+.action-btn {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 10px;
+   border-radius: 8px;
+   transition: background-color 0.3s;
+   cursor: pointer;
+}
+
+.action-btn:hover {
+   background-color: #f5f5f5;
+}
+
+.action-btn i {
+   font-size: 1.5rem;
+   margin-bottom: 5px;
+}
+
+.action-btn:nth-child(1) i {
+   color: #ffc107;
+}
+
+.action-btn:nth-child(2) i {
+   color: #4caf50;
+}
+
+.action-btn:nth-child(3) i {
+   color: #7e57c2;
+}
+
+.social-links {
+   display: flex;
+   gap: 10px;
+   margin: 20px 0;
+}
+
+.telegram-btn, .whatsapp-btn {
+   flex: 1;
+   padding: 10px;
+   border-radius: 5px;
+   border: none;
+   color: white;
+   font-weight: bold;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 8px;
+}
+
+.telegram-btn {
+   background-color: #0088cc;
+}
+
+.whatsapp-btn {
+   background-color: #25d366;
+}
+
+.referral-banner {
+   background-color: #212121;
+   color: white;
+   padding: 12px;
+   border-radius: 6px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+.referral-banner i.fa-fire {
+   color: #ff5722;
+}
+
+/* Balance Section */
+.balance-section {
+   background-color: #1a73e8;
+   border-radius: 12px;
+   padding: 20px;
+   color: white;
+   margin-bottom: 20px;
+   box-shadow: 0 4px 15px rgba(26, 115, 232, 0.3);
+}
+
+.balance-section h2 {
+   font-size: 1rem;
+   margin-bottom: 10px;
+   opacity: 0.9;
+}
+
+.balance-amount {
+   font-size: 2.5rem;
+   font-weight: bold;
+   margin-bottom: 5px;
+}
+
+.exact-balance {
+   font-size: 0.9rem;
+   opacity: 0.8;
+   margin-bottom: 20px;
+}
+
+.chart-container {
+   margin: 15px 0;
+   height: 150px;
+}
+
+.balance-actions {
+   display: flex;
+   justify-content: space-around;
+   margin-top: 20px;
+}
+
+.balance-section .action-btn {
+   background-color: rgba(255, 255, 255, 0.1);
+   padding: 12px;
+   border-radius: 5px;
+}
+
+.balance-section .action-btn:hover {
+   background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Stats Section */
+.stats-section {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 10px;
+   margin-bottom: 20px;
+}
+
+.stat-card {
+   background-color: white;
+   border-radius: 10px;
+   padding: 15px;
+   text-align: center;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.stat-title {
+   font-size: 0.8rem;
+   color: #777;
+   margin-bottom: 5px;
+}
+
+.stat-value {
+   font-weight: bold;
+   font-size: 1.1rem;
+}
+
+/* Telegram Join Section */
+.telegram-join {
+   background-color: #0088cc;
+   border-radius: 12px;
+   padding: 20px;
+   color: white;
+   margin-bottom: 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   cursor: pointer;
+}
+
+.telegram-content h2 {
+   font-size: 1.5rem;
+   margin-bottom: 5px;
+}
+
+.telegram-content p {
+   opacity: 0.9;
+   font-size: 0.9rem;
+}
+
+.telegram-icon i {
+   font-size: 3rem;
+}
+
+/* Transactions Section */
+.transactions-section {
+   background-color: white;
+   border-radius: 12px;
+   padding: 20px;
+   margin-bottom: 70px;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.section-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 15px;
+}
+
+.view-all-btn {
+   background: none;
+   border: none;
+   color: #1a73e8;
+   font-weight: bold;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   gap: 5px;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background-color: white;
+   display: flex;
+   justify-content: space-around;
+   padding: 10px 0;
+   box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+   border-top-left-radius: 15px;
+   border-top-right-radius: 15px;
+}
+
+.nav-item {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 8px 15px;
+   cursor: pointer;
+   color: #777;
+   font-size: 0.8rem;
+   text-decoration: none;
+}
+
+.nav-item.active {
+   color: #1a73e8;
+}
+
+.nav-item i {
+   font-size: 1.2rem;
+   margin-bottom: 5px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+   .stats-section {
+       grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+
+.nav-item {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 10px;
+   text-decoration: none;
+   color: inherit;
+}
+.nav-item.active {
+   color: #4CAF50; /* Highlight color */
+}
